@@ -1,14 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../contexts/AuthContext/AuthProvider';
 
 const Navber = () => {
+ 
+  const {user,lognOut} = useContext(AuthContext)
 
       const itemsMenu = <>
                  
                  <li> <Link to="/" > Home</Link> </li>
                  <li> <Link to="/contact" > Contact Us</Link> </li>
                  <li> <Link to="/about"> About</Link> </li>
-                 <li> <Link to="/sign"> Sign In</Link> </li>
+              {user?.email?<button  onClick={lognOut}> lognOut </button>: 
+              
+              <li> <Link to="/signIn"> Sign In</Link> </li>
+              
+              }
+                 
                  
         </>
     return (

@@ -23,9 +23,10 @@ const SignIn = () => {
  return (
   <div className="hero w-full my-7">
   <div className="hero-content grid gap-20 md:grid-cols-2 flex-col lg:flex-row">
-      {/* <div className="text-center lg:text-left"> */}
-          {/* <img className='w-3/4' src={img} alt="" /> */}
-      {/* </div> */}
+      <div className="text-center lg:text-left"> 
+        <img className='w-3/4 h-64' 
+        src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbmIHrjRc-M4nQ_diFRZlOXpk_vkEnDrxSiApxDrFvursDBkBnFqpwbhaxjifU45t6s8c&usqp=CAU' alt="" />
+      </div>
       <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 py-7">
           <h1 className="text-2xl text-center font-bold">Login</h1>
           <form onSubmit={handleLogin} className="card-body">

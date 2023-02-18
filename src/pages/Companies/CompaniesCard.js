@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const CompaniesCard = ({companie}) => {
 
@@ -10,7 +11,7 @@ const CompaniesCard = ({companie}) => {
       <p className='p-0'><b >Job description</b>: {description} </p>
     
     <div className="card-actions justify-end">
-      <button className="btn btn-primary">More</button>
+      <Link to='/detailes'><button className="btn btn-primary">Details</button> </Link> 
      </div>
    </div>
 

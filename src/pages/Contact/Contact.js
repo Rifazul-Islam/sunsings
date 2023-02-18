@@ -17,7 +17,7 @@ const Contact = () => {
                         <label className="label">
                             <span className="label-text">Name</span>
                         </label>
-                        <input type="text" name='name'  placeholder="Your Name" className="input input-bordered " />
+                        <input type="text" name='name'  placeholder="Your Name" className="input input-bordered " required />
                     </div>
 
                     <div className="form-control">
@@ -32,7 +32,7 @@ const Contact = () => {
                         <label className="label">
                             <span className="label-text">Phone country code </span>
                         </label>
-                        <input type="number" name='number' placeholder="Your phone Number" className="input input-bordered" />
+                        <input type="number" name='number' placeholder="Your phone Number" className="input input-bordered" required/>
                     </div>
 
 
@@ -40,7 +40,7 @@ const Contact = () => {
                         <label className="label">
                             <span className="label-text">Resume</span>
                         </label>
-                        <input type="text" name='name' placeholder="Be sure to include an updated resume" className="input input-bordered" />
+                        <input type="text" name='name' placeholder="Be sure to include an updated resume" className="input input-bordered" required/>
                     </div>
 
 

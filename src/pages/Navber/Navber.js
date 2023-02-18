@@ -8,10 +8,10 @@ const Navber = () => {
 
       const itemsMenu = <>
                  
-                 <li> <Link to="/" > Home</Link> </li>
+                 <li> <Link to="/"> Home</Link> </li>
                  <li> <Link to="/contact" > Contact Us</Link> </li>
                  <li> <Link to="/about"> About</Link> </li>
-              {user?.email?<button  onClick={lognOut}> lognOut </button>: 
+              {user?.email?<li><button  onClick={lognOut}> Signout </button></li>: 
               
               <li> <Link to="/signIn"> Sign In</Link> </li>
               
@@ -32,7 +32,7 @@ const Navber = () => {
              {itemsMenu}
       </ul>
     </div>
-    <Link className="btn btn-ghost normal-case text-xl">SunSings</Link>
+    <Link className="btn btn-ghost normal-case text-xl"><p className=' ml-32' >Job Service</p></Link>
   </div>
   <div className=" ml-96 text-1xl navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">

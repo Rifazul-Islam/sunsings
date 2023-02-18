@@ -6,7 +6,7 @@ const Companies = () => {
       const [companies,setCompanies]=useState([]);
       useEffect(()=>{
       
-          fetch('http://localhost:5000/compnies')
+          fetch(' https://sunsings-sever-side.vercel.app/compnies')
           .then(res => res.json())
           .then(data => setCompanies(data) )
 

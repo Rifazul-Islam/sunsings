@@ -6,7 +6,7 @@ const ExperiencedSection = () => {
     const [experienes,setExperienes] = useState([]);
 
     useEffect(()=>{
-      fetch('http://localhost:5000/experiences')
+      fetch(' https://sunsings-sever-side.vercel.app/experiences')
       .then(res=> res.json())
       .then(data => setExperienes(data));
 

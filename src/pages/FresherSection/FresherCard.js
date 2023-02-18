@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import PrivateRoute from '../PrivateRoute/PrivateRoute';
 
 const FresherCard = ({fresher}) => {
     
@@ -12,7 +14,7 @@ const FresherCard = ({fresher}) => {
     <h2 className='text-2x'> <b>Job Location</b> : {location} </h2>
      <h2 className='text-2x'> <b>Company Name</b>: {company} </h2>
     <div className="card-actions justify-end">
-      <button className="btn btn-primary">Apply Now</button>
+    <Link to='/contact'><button className="btn btn-primary">Apply Now</button> </Link>
      </div>
    </div>
 

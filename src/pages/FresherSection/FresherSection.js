@@ -6,7 +6,7 @@ const FresherSection = () => {
     const [freshers,setFreshers] = useState([]);
 
     useEffect(()=>{
-      fetch('http://localhost:5000/freshers')
+      fetch(' https://sunsings-sever-side.vercel.app/freshers')
       .then(res=> res.json())
       .then(data => setFreshers(data));
 

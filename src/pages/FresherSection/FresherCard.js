@@ -2,7 +2,7 @@ import React from 'react';
 
 const FresherCard = ({fresher}) => {
     
-      const {description,name,location,company} = fresher
+  const {description,name,location,company} = fresher
    return (
   
    <div className="card  bg-blue-300 shadow-xl">
